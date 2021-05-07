@@ -24,8 +24,8 @@ class LoginViewController: UIViewController {
     
     let loginButton = UIButton(title: "Login", titleColor: .white, backgroundColor: .buttonDark())
     let signInButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Sign in", for: .normal)
+        let button = UIButton(type: .system)
+        button.setTitle("Sign up", for: .normal)
         button.setTitleColor(.buttonRed(), for: .normal)
         button.titleLabel?.font = .avenir20()
         
@@ -35,6 +35,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        googleButton.customizeGoogleButton()
         view.backgroundColor = .white
         setupConstraints()
         
