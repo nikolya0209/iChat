@@ -28,6 +28,7 @@
 		52CB5E1E264C0EF900FF2A98 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 52CB5E1C264C0EF900FF2A98 /* activeChats.json */; };
 		52CB5E1F264C0EF900FF2A98 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 52CB5E1D264C0EF900FF2A98 /* waitingChats.json */; };
 		52CB5E26264C103200FF2A98 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB5E25264C103200FF2A98 /* Bundle-Decodable.swift */; };
+		52CB5E2A264CECC800FF2A98 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB5E29264CECC800FF2A98 /* ActiveChatCell.swift */; };
 		52E4E7EA2645B9CE00914222 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E7E92645B9CE00914222 /* AddPhotoView.swift */; };
 		52EBA9CC26453E3D00149E91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBA9CB26453E3D00149E91 /* LoginViewController.swift */; };
 		52EBA9CF2645823900149E91 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBA9CE2645823900149E91 /* SetupProfileViewController.swift */; };
@@ -57,6 +58,7 @@
 		52CB5E1C264C0EF900FF2A98 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = activeChats.json; path = "../../../../Уроки Ichat/15. урок/IChat/Extensions/UIKIt/activeChats.json"; sourceTree = "<group>"; };
 		52CB5E1D264C0EF900FF2A98 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../../Уроки Ichat/15. урок/IChat/Extensions/UIKIt/waitingChats.json"; sourceTree = "<group>"; };
 		52CB5E25264C103200FF2A98 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		52CB5E29264CECC800FF2A98 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		52E4E7E92645B9CE00914222 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		52EBA9CB26453E3D00149E91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		52EBA9CE2645823900149E91 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		5229C76D2647063C0075FF2A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				52CB5E28264CECB200FF2A98 /* Cell */,
 				5254D42E2647005B00AA4FB8 /* ListViewController.swift */,
 				5229C77226470BEB0075FF2A /* PeopleViewController.swift */,
 				5229C76F26470B4A0075FF2A /* MainTabBarController.swift */,
@@ -151,6 +154,14 @@
 				523F7FC026442F3D0083FDAC /* UIKit */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		52CB5E28264CECB200FF2A98 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52CB5E29264CECC800FF2A98 /* ActiveChatCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 				52EBA9CF2645823900149E91 /* SetupProfileViewController.swift in Sources */,
 				5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */,
 				523F7FD3264513B40083FDAC /* OneLineTextField.swift in Sources */,
+				52CB5E2A264CECC800FF2A98 /* ActiveChatCell.swift in Sources */,
 				523F7FB52644157C0083FDAC /* UIFont + Extension.swift in Sources */,
 				5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */,
 				523F7F9F2642973C0083FDAC /* AuthViewController.swift in Sources */,
