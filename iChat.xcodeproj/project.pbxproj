@@ -11,6 +11,7 @@
 		52014BE1264E6225008D6161 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE0264E6225008D6161 /* WaitingChatCell.swift */; };
 		52014BE4264E6570008D6161 /* SelfconfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */; };
 		52014BEA264E71F2008D6161 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE9264E71F2008D6161 /* SectionHeader.swift */; };
+		5224FD93264EB84100F211D2 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 5224FD92264EB84100F211D2 /* users.json */; };
 		5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C76F26470B4A0075FF2A /* MainTabBarController.swift */; };
 		5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C77226470BEB0075FF2A /* PeopleViewController.swift */; };
 		523F7F9B2642973C0083FDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7F9A2642973C0083FDAC /* AppDelegate.swift */; };
@@ -29,6 +30,8 @@
 		523F7FD3264513B40083FDAC /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7FD2264513B40083FDAC /* OneLineTextField.swift */; };
 		5254D42A2646D76900AA4FB8 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */; };
 		5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D42E2647005B00AA4FB8 /* ListViewController.swift */; };
+		52C63FC0264EB9FF00454BA2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FBF264EB9FF00454BA2 /* MUser.swift */; };
+		52C63FC3264EBA0800454BA2 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FC2264EBA0800454BA2 /* MChat.swift */; };
 		52CB5E1E264C0EF900FF2A98 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 52CB5E1C264C0EF900FF2A98 /* activeChats.json */; };
 		52CB5E1F264C0EF900FF2A98 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 52CB5E1D264C0EF900FF2A98 /* waitingChats.json */; };
 		52CB5E26264C103200FF2A98 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB5E25264C103200FF2A98 /* Bundle-Decodable.swift */; };
@@ -43,6 +46,7 @@
 		52014BE0264E6225008D6161 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfconfiguringCell.swift; sourceTree = "<group>"; };
 		52014BE9264E71F2008D6161 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		5224FD92264EB84100F211D2 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = "../../../../Уроки Ichat/20. урок/IChat/users.json"; sourceTree = "<group>"; };
 		5229C76F26470B4A0075FF2A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5229C77226470BEB0075FF2A /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		523F7F972642973C0083FDAC /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,8 @@
 		523F7FD2264513B40083FDAC /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		5254D42E2647005B00AA4FB8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		52C63FBF264EB9FF00454BA2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		52C63FC2264EBA0800454BA2 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		52CB5E1C264C0EF900FF2A98 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = activeChats.json; path = "../../../../Уроки Ichat/15. урок/IChat/Extensions/UIKIt/activeChats.json"; sourceTree = "<group>"; };
 		52CB5E1D264C0EF900FF2A98 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../../Уроки Ichat/15. урок/IChat/Extensions/UIKIt/waitingChats.json"; sourceTree = "<group>"; };
 		52CB5E25264C103200FF2A98 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
@@ -91,6 +97,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		5224FD95264EB88600F211D2 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				52014BE9264E71F2008D6161 /* SectionHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		5229C76C2647060B0075FF2A /* Signin&Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +112,6 @@
 				523F7FCE26450C820083FDAC /* SignUpViewController.swift */,
 				52EBA9CB26453E3D00149E91 /* LoginViewController.swift */,
 				52EBA9CE2645823900149E91 /* SetupProfileViewController.swift */,
-				52014BE9264E71F2008D6161 /* SectionHeader.swift */,
 			);
 			path = "Signin&Auth";
 			sourceTree = "<group>";
@@ -106,6 +119,7 @@
 		5229C76D2647063C0075FF2A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5224FD95264EB88600F211D2 /* Header */,
 				52CB5E28264CECB200FF2A98 /* Cell */,
 				5254D42E2647005B00AA4FB8 /* ListViewController.swift */,
 				5229C77226470BEB0075FF2A /* PeopleViewController.swift */,
@@ -135,6 +149,7 @@
 			children = (
 				523F7F9A2642973C0083FDAC /* AppDelegate.swift */,
 				523F7F9C2642973C0083FDAC /* SceneDelegate.swift */,
+				52C63FC5264EBA9300454BA2 /* Model */,
 				5229C76C2647060B0075FF2A /* Signin&Auth */,
 				5229C76D2647063C0075FF2A /* Controllers */,
 				52014BE6264E659E008D6161 /* Protocols */,
@@ -157,6 +172,7 @@
 				523F7FC7264470850083FDAC /* StackView + Extension.swift */,
 				5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */,
 				52CB5E1C264C0EF900FF2A98 /* activeChats.json */,
+				5224FD92264EB84100F211D2 /* users.json */,
 				52CB5E1D264C0EF900FF2A98 /* waitingChats.json */,
 			);
 			path = UIKit;
@@ -173,6 +189,15 @@
 				523F7FC026442F3D0083FDAC /* UIKit */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		52C63FC5264EBA9300454BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52C63FBF264EB9FF00454BA2 /* MUser.swift */,
+				52C63FC2264EBA0800454BA2 /* MChat.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		52CB5E28264CECB200FF2A98 /* Cell */ = {
@@ -241,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5224FD93264EB84100F211D2 /* users.json in Resources */,
 				523F7FA72642973F0083FDAC /* LaunchScreen.storyboard in Resources */,
 				52CB5E1E264C0EF900FF2A98 /* activeChats.json in Resources */,
 				523F7FA42642973F0083FDAC /* Assets.xcassets in Resources */,
@@ -255,12 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C63FC3264EBA0800454BA2 /* MChat.swift in Sources */,
 				5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */,
 				52EBA9CF2645823900149E91 /* SetupProfileViewController.swift in Sources */,
 				52014BEA264E71F2008D6161 /* SectionHeader.swift in Sources */,
 				52014BDE264E39B9008D6161 /* GradientView.swift in Sources */,
 				5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */,
 				523F7FD3264513B40083FDAC /* OneLineTextField.swift in Sources */,
+				52C63FC0264EB9FF00454BA2 /* MUser.swift in Sources */,
 				52CB5E2A264CECC800FF2A98 /* ActiveChatCell.swift in Sources */,
 				523F7FB52644157C0083FDAC /* UIFont + Extension.swift in Sources */,
 				5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */,

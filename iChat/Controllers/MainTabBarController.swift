@@ -23,8 +23,9 @@ class MainTabBarController: UITabBarController {
 
         viewControllers = [
         
-            generaiteNavigationController(rootviewController: listViewController, title: "Conversations", image: convImage),
-            generaiteNavigationController(rootviewController: peopleViewController, title: "People", image: peopleImage)
+            generaiteNavigationController(rootviewController: peopleViewController, title: "People", image: peopleImage),
+            generaiteNavigationController(rootviewController: listViewController, title: "Conversations", image: convImage)
+            
             
         ]
     }
