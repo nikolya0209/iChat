@@ -10,6 +10,7 @@
 		52014BDE264E39B9008D6161 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BDD264E39B9008D6161 /* GradientView.swift */; };
 		52014BE1264E6225008D6161 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE0264E6225008D6161 /* WaitingChatCell.swift */; };
 		52014BE4264E6570008D6161 /* SelfconfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */; };
+		52014BEA264E71F2008D6161 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE9264E71F2008D6161 /* SectionHeader.swift */; };
 		5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C76F26470B4A0075FF2A /* MainTabBarController.swift */; };
 		5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C77226470BEB0075FF2A /* PeopleViewController.swift */; };
 		523F7F9B2642973C0083FDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7F9A2642973C0083FDAC /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 		52014BDD264E39B9008D6161 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		52014BE0264E6225008D6161 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfconfiguringCell.swift; sourceTree = "<group>"; };
+		52014BE9264E71F2008D6161 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		5229C76F26470B4A0075FF2A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5229C77226470BEB0075FF2A /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		523F7F972642973C0083FDAC /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 				523F7FCE26450C820083FDAC /* SignUpViewController.swift */,
 				52EBA9CB26453E3D00149E91 /* LoginViewController.swift */,
 				52EBA9CE2645823900149E91 /* SetupProfileViewController.swift */,
+				52014BE9264E71F2008D6161 /* SectionHeader.swift */,
 			);
 			path = "Signin&Auth";
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */,
 				52EBA9CF2645823900149E91 /* SetupProfileViewController.swift in Sources */,
+				52014BEA264E71F2008D6161 /* SectionHeader.swift in Sources */,
 				52014BDE264E39B9008D6161 /* GradientView.swift in Sources */,
 				5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */,
 				523F7FD3264513B40083FDAC /* OneLineTextField.swift in Sources */,
