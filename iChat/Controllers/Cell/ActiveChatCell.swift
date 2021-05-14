@@ -7,10 +7,7 @@
 
 import UIKit
 
-protocol SelfconfiguringCell {
-    static var reuseId: String { get }
-    func configure(with value: MChat)
-}
+
 
 class ActiveChatCell: UICollectionViewCell, SelfconfiguringCell {
     static var reuseId: String = "ActiveChatCell"

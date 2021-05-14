@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		52014BDE264E39B9008D6161 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BDD264E39B9008D6161 /* GradientView.swift */; };
+		52014BE1264E6225008D6161 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE0264E6225008D6161 /* WaitingChatCell.swift */; };
+		52014BE4264E6570008D6161 /* SelfconfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */; };
 		5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C76F26470B4A0075FF2A /* MainTabBarController.swift */; };
 		5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C77226470BEB0075FF2A /* PeopleViewController.swift */; };
 		523F7F9B2642973C0083FDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7F9A2642973C0083FDAC /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		52014BDD264E39B9008D6161 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		52014BE0264E6225008D6161 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
+		52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfconfiguringCell.swift; sourceTree = "<group>"; };
 		5229C76F26470B4A0075FF2A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5229C77226470BEB0075FF2A /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		523F7F972642973C0083FDAC /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52014BE6264E659E008D6161 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5229C76C2647060B0075FF2A /* Signin&Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +134,7 @@
 				523F7F9C2642973C0083FDAC /* SceneDelegate.swift */,
 				5229C76C2647060B0075FF2A /* Signin&Auth */,
 				5229C76D2647063C0075FF2A /* Controllers */,
+				52014BE6264E659E008D6161 /* Protocols */,
 				523F7FC226442F560083FDAC /* Extension */,
 				523F7FA32642973F0083FDAC /* Assets.xcassets */,
 				523F7FA52642973F0083FDAC /* LaunchScreen.storyboard */,
@@ -163,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				52CB5E29264CECC800FF2A98 /* ActiveChatCell.swift */,
+				52014BE0264E6225008D6161 /* WaitingChatCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -247,6 +261,7 @@
 				523F7FB52644157C0083FDAC /* UIFont + Extension.swift in Sources */,
 				5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */,
 				523F7F9F2642973C0083FDAC /* AuthViewController.swift in Sources */,
+				52014BE4264E6570008D6161 /* SelfconfiguringCell.swift in Sources */,
 				52CB5E26264C103200FF2A98 /* Bundle-Decodable.swift in Sources */,
 				523F7FBB26441BB10083FDAC /* Label + Extension.swift in Sources */,
 				523F7FC52644326B0083FDAC /* ButtonFormView.swift in Sources */,
@@ -255,6 +270,7 @@
 				523F7FBE26441DBC0083FDAC /* UIImageView + Extension.swift in Sources */,
 				523F7FCF26450C820083FDAC /* SignUpViewController.swift in Sources */,
 				5254D42A2646D76900AA4FB8 /* SegmentedControl + Extension.swift in Sources */,
+				52014BE1264E6225008D6161 /* WaitingChatCell.swift in Sources */,
 				523F7FB8264417850083FDAC /* UIColor + Extension.swift in Sources */,
 				523F7F9D2642973C0083FDAC /* SceneDelegate.swift in Sources */,
 				523F7FB226440EA40083FDAC /* UIButton + Extension.swift in Sources */,
