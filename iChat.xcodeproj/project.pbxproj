@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52014BDE264E39B9008D6161 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BDD264E39B9008D6161 /* GradientView.swift */; };
 		5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C76F26470B4A0075FF2A /* MainTabBarController.swift */; };
 		5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C77226470BEB0075FF2A /* PeopleViewController.swift */; };
 		523F7F9B2642973C0083FDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7F9A2642973C0083FDAC /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52014BDD264E39B9008D6161 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5229C76F26470B4A0075FF2A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5229C77226470BEB0075FF2A /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		523F7F972642973C0083FDAC /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				523F7FC42644326B0083FDAC /* ButtonFormView.swift */,
+				52014BDD264E39B9008D6161 /* GradientView.swift */,
 				523F7FD2264513B40083FDAC /* OneLineTextField.swift */,
 				52E4E7E92645B9CE00914222 /* AddPhotoView.swift */,
 				52CB5E25264C103200FF2A98 /* Bundle-Decodable.swift */,
@@ -237,6 +240,7 @@
 			files = (
 				5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */,
 				52EBA9CF2645823900149E91 /* SetupProfileViewController.swift in Sources */,
+				52014BDE264E39B9008D6161 /* GradientView.swift in Sources */,
 				5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */,
 				523F7FD3264513B40083FDAC /* OneLineTextField.swift in Sources */,
 				52CB5E2A264CECC800FF2A98 /* ActiveChatCell.swift in Sources */,
