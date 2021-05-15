@@ -32,6 +32,8 @@
 		5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D42E2647005B00AA4FB8 /* ListViewController.swift */; };
 		52C63FC0264EB9FF00454BA2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FBF264EB9FF00454BA2 /* MUser.swift */; };
 		52C63FC3264EBA0800454BA2 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FC2264EBA0800454BA2 /* MChat.swift */; };
+		52C63FC8264F96F600454BA2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FC7264F96F600454BA2 /* UserCell.swift */; };
+		52C63FCB264F9EBB00454BA2 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FCA264F9EBB00454BA2 /* UIViewController + Extension.swift */; };
 		52CB5E1E264C0EF900FF2A98 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 52CB5E1C264C0EF900FF2A98 /* activeChats.json */; };
 		52CB5E1F264C0EF900FF2A98 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 52CB5E1D264C0EF900FF2A98 /* waitingChats.json */; };
 		52CB5E26264C103200FF2A98 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB5E25264C103200FF2A98 /* Bundle-Decodable.swift */; };
@@ -69,6 +71,8 @@
 		5254D42E2647005B00AA4FB8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		52C63FBF264EB9FF00454BA2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		52C63FC2264EBA0800454BA2 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
+		52C63FC7264F96F600454BA2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		52C63FCA264F9EBB00454BA2 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		52CB5E1C264C0EF900FF2A98 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = activeChats.json; path = "../../../../Уроки Ichat/15. урок/IChat/Extensions/UIKIt/activeChats.json"; sourceTree = "<group>"; };
 		52CB5E1D264C0EF900FF2A98 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../../Уроки Ichat/15. урок/IChat/Extensions/UIKIt/waitingChats.json"; sourceTree = "<group>"; };
 		52CB5E25264C103200FF2A98 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		523F7FC026442F3D0083FDAC /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				52C63FCA264F9EBB00454BA2 /* UIViewController + Extension.swift */,
 				523F7FB126440EA40083FDAC /* UIButton + Extension.swift */,
 				523F7FBA26441BB10083FDAC /* Label + Extension.swift */,
 				523F7FB42644157C0083FDAC /* UIFont + Extension.swift */,
@@ -205,6 +210,7 @@
 			children = (
 				52CB5E29264CECC800FF2A98 /* ActiveChatCell.swift */,
 				52014BE0264E6225008D6161 /* WaitingChatCell.swift */,
+				52C63FC7264F96F600454BA2 /* UserCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -301,6 +307,8 @@
 				52E4E7EA2645B9CE00914222 /* AddPhotoView.swift in Sources */,
 				523F7FBE26441DBC0083FDAC /* UIImageView + Extension.swift in Sources */,
 				523F7FCF26450C820083FDAC /* SignUpViewController.swift in Sources */,
+				52C63FC8264F96F600454BA2 /* UserCell.swift in Sources */,
+				52C63FCB264F9EBB00454BA2 /* UIViewController + Extension.swift in Sources */,
 				5254D42A2646D76900AA4FB8 /* SegmentedControl + Extension.swift in Sources */,
 				52014BE1264E6225008D6161 /* WaitingChatCell.swift in Sources */,
 				523F7FB8264417850083FDAC /* UIColor + Extension.swift in Sources */,
