@@ -14,7 +14,7 @@ class ProfilViewController: UIViewController {
     let imageView = UIImageView(image: #imageLiteral(resourceName: "human2"), contentMode: .scaleAspectFill)
     let nameLabel = UILabel(text: "Peter Ben", font: .systemFont(ofSize: 20, weight: .light))
     let aboutMeLabel = UILabel(text: "You have the opportunity to chat with the best man in the world!", font: .systemFont(ofSize: 20, weight: .light))
-    let myTextField = UITextField()
+    let myTextField = InsertableTextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,14 @@ class ProfilViewController: UIViewController {
         aboutMeLabel.numberOfLines = 0
         containerView.backgroundColor = .mainWhite()
         containerView.layer.cornerRadius = 30
-        myTextField.borderStyle = .roundedRect
+      
+        if let button = myTextField.rightView as? UIButton {
+            button.addTarget(self, action: #selector(sendMessage), for: .touchUpInside)
+        }
+    }
+    
+    @objc private func sendMessage() {
+        print(#function)
     }
     
 }
