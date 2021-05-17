@@ -44,6 +44,7 @@
 		52E4E7EA2645B9CE00914222 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E7E92645B9CE00914222 /* AddPhotoView.swift */; };
 		52EBA9CC26453E3D00149E91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBA9CB26453E3D00149E91 /* LoginViewController.swift */; };
 		52EBA9CF2645823900149E91 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBA9CE2645823900149E91 /* SetupProfileViewController.swift */; };
+		52EEA91D265299C300951F56 /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EEA91C265299C300951F56 /* ChatRequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		52E4E7E92645B9CE00914222 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		52EBA9CB26453E3D00149E91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		52EBA9CE2645823900149E91 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		52EEA91C265299C300951F56 /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				52C63FCF2650EBFB00454BA2 /* ProfilViewController.swift */,
 				5229C77226470BEB0075FF2A /* PeopleViewController.swift */,
 				5229C76F26470B4A0075FF2A /* MainTabBarController.swift */,
+				52EEA91C265299C300951F56 /* ChatRequestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */,
 				523F7F9F2642973C0083FDAC /* AuthViewController.swift in Sources */,
 				52014BE4264E6570008D6161 /* SelfconfiguringCell.swift in Sources */,
+				52EEA91D265299C300951F56 /* ChatRequestViewController.swift in Sources */,
 				52CB5E26264C103200FF2A98 /* Bundle-Decodable.swift in Sources */,
 				523F7FBB26441BB10083FDAC /* Label + Extension.swift in Sources */,
 				523F7FC52644326B0083FDAC /* ButtonFormView.swift in Sources */,
