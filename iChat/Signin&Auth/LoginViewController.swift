@@ -71,7 +71,7 @@ extension LoginViewController {
         let stackView = UIStackView(arrangedSubviews: [loginWithview, orLabel, emailStackView, passwordStackView, loginButton], axis: .vertical, spacing: 40)
         
         signInButton.contentHorizontalAlignment = .leading
-        let bottomStackView = UIStackView(arrangedSubviews: [needAccountLabel, signInButton], axis: .horizontal, spacing: 8)
+        let bottomStackView = UIStackView(arrangedSubviews: [needAccountLabel, signInButton], axis: .horizontal, spacing: 10)
         bottomStackView.alignment = .firstBaseline
         
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -84,7 +84,7 @@ extension LoginViewController {
         
         NSLayoutConstraint.activate([
             
-            welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 140),
+            welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
             welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
            
         ])
@@ -97,7 +97,7 @@ extension LoginViewController {
         ])
         
         NSLayoutConstraint.activate([
-            bottomStackView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 60),
+            bottomStackView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 20),
             bottomStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             bottomStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])

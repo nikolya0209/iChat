@@ -30,6 +30,8 @@
 		523F7FD3264513B40083FDAC /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7FD2264513B40083FDAC /* OneLineTextField.swift */; };
 		5249574526544597006B7485 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5249574426544597006B7485 /* GoogleService-Info.plist */; };
 		5249574926555508006B7485 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249574826555508006B7485 /* AuthService.swift */; };
+		5249574D26557C8A006B7485 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249574C26557C8A006B7485 /* Validators.swift */; };
+		5249576226558139006B7485 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249576126558139006B7485 /* AuthError.swift */; };
 		5254D42A2646D76900AA4FB8 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */; };
 		5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D42E2647005B00AA4FB8 /* ListViewController.swift */; };
 		52C63FC0264EB9FF00454BA2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FBF264EB9FF00454BA2 /* MUser.swift */; };
@@ -76,6 +78,8 @@
 		523F7FD2264513B40083FDAC /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		5249574426544597006B7485 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5249574826555508006B7485 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		5249574C26557C8A006B7485 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		5249576126558139006B7485 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		5254D42E2647005B00AA4FB8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		52C63FBF264EB9FF00454BA2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 				52E4E7E92645B9CE00914222 /* AddPhotoView.swift */,
 				52CB5E25264C103200FF2A98 /* Bundle-Decodable.swift */,
 				523F7FC026442F3D0083FDAC /* UIKit */,
+				52495764265585A9006B7485 /* Helpers */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -227,6 +232,15 @@
 				5249574826555508006B7485 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		52495764265585A9006B7485 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5249576126558139006B7485 /* AuthError.swift */,
+				5249574C26557C8A006B7485 /* Validators.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		52C63FC5264EBA9300454BA2 /* Model */ = {
@@ -388,8 +402,10 @@
 				52014BEA264E71F2008D6161 /* SectionHeader.swift in Sources */,
 				52014BDE264E39B9008D6161 /* GradientView.swift in Sources */,
 				5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */,
+				5249576226558139006B7485 /* AuthError.swift in Sources */,
 				52C63FD02650EBFB00454BA2 /* ProfilViewController.swift in Sources */,
 				523F7FD3264513B40083FDAC /* OneLineTextField.swift in Sources */,
+				5249574D26557C8A006B7485 /* Validators.swift in Sources */,
 				52C63FC0264EB9FF00454BA2 /* MUser.swift in Sources */,
 				52CB5E2A264CECC800FF2A98 /* ActiveChatCell.swift in Sources */,
 				52C63FD32652396E00454BA2 /* InsertableTextField.swift in Sources */,
