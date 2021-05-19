@@ -29,6 +29,7 @@
 		523F7FCF26450C820083FDAC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7FCE26450C820083FDAC /* SignUpViewController.swift */; };
 		523F7FD3264513B40083FDAC /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7FD2264513B40083FDAC /* OneLineTextField.swift */; };
 		5249574526544597006B7485 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5249574426544597006B7485 /* GoogleService-Info.plist */; };
+		5249574926555508006B7485 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249574826555508006B7485 /* AuthService.swift */; };
 		5254D42A2646D76900AA4FB8 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */; };
 		5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D42E2647005B00AA4FB8 /* ListViewController.swift */; };
 		52C63FC0264EB9FF00454BA2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FBF264EB9FF00454BA2 /* MUser.swift */; };
@@ -74,6 +75,7 @@
 		523F7FCE26450C820083FDAC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		523F7FD2264513B40083FDAC /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		5249574426544597006B7485 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5249574826555508006B7485 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		5254D42E2647005B00AA4FB8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		52C63FBF264EB9FF00454BA2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
@@ -172,7 +174,7 @@
 			children = (
 				523F7F9A2642973C0083FDAC /* AppDelegate.swift */,
 				523F7F9C2642973C0083FDAC /* SceneDelegate.swift */,
-				52C63FC5264EBA9300454BA2 /* Model */,
+				5249574726555417006B7485 /* Services */,
 				5229C76C2647060B0075FF2A /* Signin&Auth */,
 				5229C76D2647063C0075FF2A /* Controllers */,
 				52014BE6264E659E008D6161 /* Protocols */,
@@ -216,6 +218,15 @@
 				523F7FC026442F3D0083FDAC /* UIKit */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5249574726555417006B7485 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52C63FC5264EBA9300454BA2 /* Model */,
+				5249574826555508006B7485 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		52C63FC5264EBA9300454BA2 /* Model */ = {
@@ -402,6 +413,7 @@
 				523F7FB8264417850083FDAC /* UIColor + Extension.swift in Sources */,
 				523F7F9D2642973C0083FDAC /* SceneDelegate.swift in Sources */,
 				523F7FB226440EA40083FDAC /* UIButton + Extension.swift in Sources */,
+				5249574926555508006B7485 /* AuthService.swift in Sources */,
 				52EBA9CC26453E3D00149E91 /* LoginViewController.swift in Sources */,
 				523F7FC8264470850083FDAC /* StackView + Extension.swift in Sources */,
 			);

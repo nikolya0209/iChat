@@ -39,10 +39,21 @@ class LoginViewController: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
         
-        
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
-    
+    @objc private func loginButtonTapped() {
+        print(#function)
+        AuthService.shared.login(email: emailTextField.text!, password: passwordTextField.text!) { (result) in
+            switch result {
+            
+            case .success(let user):
+                self.showAlert(with: "Успешно", and: "Вы авторизованы")
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
+    }
 }
 
 //MARK: - Setup constraints
@@ -60,7 +71,7 @@ extension LoginViewController {
         let stackView = UIStackView(arrangedSubviews: [loginWithview, orLabel, emailStackView, passwordStackView, loginButton], axis: .vertical, spacing: 40)
         
         signInButton.contentHorizontalAlignment = .leading
-        let bottomStackView = UIStackView(arrangedSubviews: [needAccountLabel, signInButton], axis: .horizontal, spacing: 10)
+        let bottomStackView = UIStackView(arrangedSubviews: [needAccountLabel, signInButton], axis: .horizontal, spacing: 8)
         bottomStackView.alignment = .firstBaseline
         
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -73,7 +84,7 @@ extension LoginViewController {
         
         NSLayoutConstraint.activate([
             
-            welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
+            welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 140),
             welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
            
         ])

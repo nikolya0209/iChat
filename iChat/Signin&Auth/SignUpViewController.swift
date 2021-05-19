@@ -21,7 +21,7 @@ class SignUpViewController: UIViewController {
     let passwordTextField = OneLineTextField(font: .avenir20())
     let confirmPasswordTextField = OneLineTextField(font: .avenir20())
     
-    let signInButton = UIButton(title: "Sigh Up", titleColor: .white, backgroundColor: .buttonDark(), cornerRadius: 4)
+    let signUpButton = UIButton(title: "Sigh Up", titleColor: .white, backgroundColor: .buttonDark(), cornerRadius: 4)
     let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Login", for: .normal)
@@ -38,9 +38,24 @@ class SignUpViewController: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
         
+        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+    
+
     }
     
-    
+    @objc private func signUpButtonTapped() {
+        print(#function)
+        AuthService.shared.register(email: emailTextField.text, password: passwordTextField.text, confirmPassword: confirmPasswordTextField.text) { (result) in
+            switch result {
+            
+            case .success(let user):
+                self.showAlert(with: "Успешно", and: "Вы зарегестрированы")
+                print(user.email)
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
+    }
 }
 
 
@@ -51,9 +66,9 @@ extension SignUpViewController {
         let passwordStackview  = UIStackView(arrangedSubviews: [passwordLabel, passwordTextField], axis: .vertical, spacing: 0)
         let confirmPasswordStackview  = UIStackView(arrangedSubviews: [confirmPasswordLabel, confirmPasswordTextField], axis: .vertical, spacing: 0)
         
-        signInButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        signUpButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
-        let stackView = UIStackView(arrangedSubviews: [emailStackview, passwordStackview, confirmPasswordStackview, signInButton],
+        let stackView = UIStackView(arrangedSubviews: [emailStackview, passwordStackview, confirmPasswordStackview, signUpButton],
                                     axis: .vertical,
                                     spacing: 40)
         
@@ -114,4 +129,15 @@ struct SignUpViewControllerProvider: PreviewProvider {
             
         }
     }
+}
+
+extension UIViewController {
+    
+    func showAlert(with title: String, and message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
 }
