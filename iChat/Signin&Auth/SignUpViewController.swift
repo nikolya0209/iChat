@@ -30,6 +30,7 @@ class SignUpViewController: UIViewController {
         
         return button
     }()
+    weak var delegate: AuthNavigationDelegate?
 
     
     override func viewDidLoad() {
@@ -39,6 +40,7 @@ class SignUpViewController: UIViewController {
         setupConstraints()
         
         signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     
 
     }
@@ -49,13 +51,22 @@ class SignUpViewController: UIViewController {
             switch result {
             
             case .success(let user):
-                self.showAlert(with: "Успешно", and: "Вы зарегестрированы")
-                print(user.email)
+                
+                self.showAlert(with: "Успешно", and: "Вы зарегестрированы") {
+                    self.present(SetupProfileViewController(), animated: true, completion: nil)
+                }
             case .failure(let error):
                 self.showAlert(with: "Ошибка", and: error.localizedDescription)
             }
         }
     }
+    
+    @objc private func loginButtonTapped() {
+        self.dismiss(animated: true) {
+            self.delegate?.toLoginVC()
+        }
+    }
+    
 }
 
 
@@ -133,9 +144,11 @@ struct SignUpViewControllerProvider: PreviewProvider {
 
 extension UIViewController {
     
-    func showAlert(with title: String, and message: String) {
+    func showAlert(with title: String, and message: String, complition: @escaping () -> Void = { }) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
+            complition()
+        }
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
     }
