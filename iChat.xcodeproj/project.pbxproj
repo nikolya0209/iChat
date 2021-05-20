@@ -34,6 +34,9 @@
 		5249576226558139006B7485 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249576126558139006B7485 /* AuthError.swift */; };
 		5254D42A2646D76900AA4FB8 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */; };
 		5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D42E2647005B00AA4FB8 /* ListViewController.swift */; };
+		528438472656356F009A3E5C /* AuthNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438462656356F009A3E5C /* AuthNavigationDelegate.swift */; };
+		5284384A2656CCBF009A3E5C /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438492656CCBF009A3E5C /* FirestoreService.swift */; };
+		528438622656D334009A3E5C /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438612656D334009A3E5C /* UserError.swift */; };
 		52C63FC0264EB9FF00454BA2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FBF264EB9FF00454BA2 /* MUser.swift */; };
 		52C63FC3264EBA0800454BA2 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FC2264EBA0800454BA2 /* MChat.swift */; };
 		52C63FC8264F96F600454BA2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C63FC7264F96F600454BA2 /* UserCell.swift */; };
@@ -82,6 +85,9 @@
 		5249576126558139006B7485 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		5254D42E2647005B00AA4FB8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		528438462656356F009A3E5C /* AuthNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationDelegate.swift; sourceTree = "<group>"; };
+		528438492656CCBF009A3E5C /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		528438612656D334009A3E5C /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		52C63FBF264EB9FF00454BA2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		52C63FC2264EBA0800454BA2 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		52C63FC7264F96F600454BA2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */,
+				528438462656356F009A3E5C /* AuthNavigationDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -230,6 +237,7 @@
 			children = (
 				52C63FC5264EBA9300454BA2 /* Model */,
 				5249574826555508006B7485 /* AuthService.swift */,
+				528438492656CCBF009A3E5C /* FirestoreService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				5249576126558139006B7485 /* AuthError.swift */,
+				528438612656D334009A3E5C /* UserError.swift */,
 				5249574C26557C8A006B7485 /* Validators.swift */,
 			);
 			path = Helpers;
@@ -408,8 +417,10 @@
 				5249574D26557C8A006B7485 /* Validators.swift in Sources */,
 				52C63FC0264EB9FF00454BA2 /* MUser.swift in Sources */,
 				52CB5E2A264CECC800FF2A98 /* ActiveChatCell.swift in Sources */,
+				528438472656356F009A3E5C /* AuthNavigationDelegate.swift in Sources */,
 				52C63FD32652396E00454BA2 /* InsertableTextField.swift in Sources */,
 				523F7FB52644157C0083FDAC /* UIFont + Extension.swift in Sources */,
+				5284384A2656CCBF009A3E5C /* FirestoreService.swift in Sources */,
 				5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */,
 				523F7F9F2642973C0083FDAC /* AuthViewController.swift in Sources */,
 				52014BE4264E6570008D6161 /* SelfconfiguringCell.swift in Sources */,
@@ -417,6 +428,7 @@
 				52CB5E26264C103200FF2A98 /* Bundle-Decodable.swift in Sources */,
 				523F7FBB26441BB10083FDAC /* Label + Extension.swift in Sources */,
 				523F7FC52644326B0083FDAC /* ButtonFormView.swift in Sources */,
+				528438622656D334009A3E5C /* UserError.swift in Sources */,
 				523F7F9B2642973C0083FDAC /* AppDelegate.swift in Sources */,
 				52E4E7EA2645B9CE00914222 /* AddPhotoView.swift in Sources */,
 				52C63FD72652510B00454BA2 /* UIView + Extension.swift in Sources */,

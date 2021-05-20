@@ -7,10 +7,7 @@
 
 import UIKit
 
-protocol AuthNavigationDelegate: class {
-    func toLoginVC()
-    func toSignUpVc()
-}
+
 
 class LoginViewController: UIViewController {
     
