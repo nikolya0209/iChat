@@ -55,8 +55,6 @@ class AuthService {
             }
             completion(.success(result.user))
         }
-        
-        
     }
 }
 

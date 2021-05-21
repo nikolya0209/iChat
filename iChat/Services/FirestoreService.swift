@@ -17,7 +17,23 @@ class FirestoreService {
     private var userRef: CollectionReference {
         return db.collection("users")
     }
-    func saveProfileWith(id: String, email: String, username: String?, avatarImageString: String?, sex: String?, description: String?, completion: @escaping (Result<MUser, Error>) -> Void) {
+    
+    func getUserData(user: User, completion: @escaping (Result<MUser, Error>) -> Void) {
+        let docRef = userRef.document(user.uid)
+        docRef.getDocument { (documeht, error) in
+            if let document = documeht, document.exists {
+                guard let muser = MUser(document: document) else {
+                    completion(.failure(UserError.cannotUnwrapToUser))
+                    return
+                }
+                completion(.success(muser))
+            } else {
+                completion(.failure(UserError.cannotUserInfo))
+            }
+        }
+    }
+    
+    func saveProfileWith(id: String, email: String, username: String?, avatarStringURL: String?, description: String?, sex: String?, completion: @escaping (Result<MUser, Error>) -> Void) {
         
         guard Validators.isFilled(username: username, description: description, sex: sex) else {
             completion(.failure(UserError.notFilled))

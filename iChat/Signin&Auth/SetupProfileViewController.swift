@@ -47,14 +47,18 @@ class SetupProfileViewController: UIViewController {
         FirestoreService.shared.saveProfileWith(id: currentUser.uid,
                                                 email: currentUser.email!,
                                                 username: fullNameTextField.text,
-                                                avatarImageString: "nil",
-                                                sex: sexSegmentedControl.titleForSegment(at: sexSegmentedControl.selectedSegmentIndex),
-                                                description: aboutMeTextField.text) { (result) in
+                                                avatarStringURL: "nil",
+                                                description: aboutMeTextField.text,
+                                                sex: sexSegmentedControl.titleForSegment(at: sexSegmentedControl.selectedSegmentIndex))
+                                                 { (result) in
             switch result {
             
             case .success(let muser):
-                self.showAlert(with: "Успешно", and: "Приятного общения")
-                print(muser)
+                self.showAlert(with: "Успешно", and: "Данные сохранены!") {
+                    let mainTabBar = MainTabBarController(currentUser: muser)
+                    mainTabBar.modalPresentationStyle = .fullScreen
+                    self.present(mainTabBar, animated: true, completion: nil)
+                }
             case .failure(let error):
                 self.showAlert(with: "Ошибка", and: error.localizedDescription)
             }
