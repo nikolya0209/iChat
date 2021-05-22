@@ -10,6 +10,9 @@ import Firebase
 import FirebaseFirestore
 
 class FirestoreService {
+    
+    
+    
     static let shared = FirestoreService()
     
     let db = Firestore.firestore()

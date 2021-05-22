@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import GoogleSignIn
+import Firebase
 
 class AuthViewController: UIViewController {
 
+    
+    
     let logoImageView = UIImageView(image: #imageLiteral(resourceName: "Logo"), contentMode: .scaleAspectFit)
     
     let googleLabel = UILabel(text: "Get started with")
@@ -25,15 +29,26 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+        
         googleButton.customizeGoogleButton()
         view.backgroundColor = .white
         setupConstraints()
         
         emailButton.addTarget(self, action: #selector(emailButtonTapped), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        googleButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
         
         signUpVC.delegate = self
         loginVC.delegate = self
+        
+
+        GIDSignIn.sharedInstance()?.delegate = self
+    }
+    
+    @objc private func googleButtonTapped() {
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
     }
 
     @objc private func emailButtonTapped() {
@@ -46,6 +61,37 @@ class AuthViewController: UIViewController {
     }
 
 }
+
+// MARK: - GIDSignInDelegate
+extension AuthViewController: GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        AuthService.shared.googleLogin(user: user, error: error) { (result) in
+            switch result {
+            case .success(let user):
+                FirestoreService.shared.getUserData(user: user) { (result) in
+                    switch result {
+                    case .success(let muser):
+                        
+                        UIApplication.getTopViewController()!.showAlert(with: "Успешно", and: "Вы авторизованы") {
+                            let mainTabBar = MainTabBarController(currentUser: muser)
+                            mainTabBar.modalPresentationStyle = .fullScreen
+                            UIApplication.getTopViewController()!.present(mainTabBar, animated: true, completion: nil)
+                        }
+                    case .failure(_):
+                        UIApplication.getTopViewController()!.showAlert(with: "Успешно", and: "Вы зарегистрированы") {
+                            UIApplication.getTopViewController()!.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
+                        }
+                    }
+                }
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
+    }
+    
+    
+}
+
 // MARK: - Setup constraints
 extension AuthViewController {
     private func setupConstraints() {

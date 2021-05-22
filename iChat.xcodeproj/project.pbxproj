@@ -34,6 +34,7 @@
 		5249576226558139006B7485 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249576126558139006B7485 /* AuthError.swift */; };
 		5254D42A2646D76900AA4FB8 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */; };
 		5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D42E2647005B00AA4FB8 /* ListViewController.swift */; };
+		52690ACD2658F70B00E762F3 /* UIaplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52690ACC2658F70B00E762F3 /* UIaplication + Extension.swift */; };
 		528438472656356F009A3E5C /* AuthNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438462656356F009A3E5C /* AuthNavigationDelegate.swift */; };
 		5284384A2656CCBF009A3E5C /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438492656CCBF009A3E5C /* FirestoreService.swift */; };
 		528438622656D334009A3E5C /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438612656D334009A3E5C /* UserError.swift */; };
@@ -85,6 +86,7 @@
 		5249576126558139006B7485 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		5254D42E2647005B00AA4FB8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		52690ACC2658F70B00E762F3 /* UIaplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIaplication + Extension.swift"; sourceTree = "<group>"; };
 		528438462656356F009A3E5C /* AuthNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationDelegate.swift; sourceTree = "<group>"; };
 		528438492656CCBF009A3E5C /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		528438612656D334009A3E5C /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				52C63FCA264F9EBB00454BA2 /* UIViewController + Extension.swift */,
+				52690ACC2658F70B00E762F3 /* UIaplication + Extension.swift */,
 				52C63FD62652510B00454BA2 /* UIView + Extension.swift */,
 				523F7FB126440EA40083FDAC /* UIButton + Extension.swift */,
 				523F7FBA26441BB10083FDAC /* Label + Extension.swift */,
@@ -300,6 +303,7 @@
 				523F7F942642973C0083FDAC /* Frameworks */,
 				523F7F952642973C0083FDAC /* Resources */,
 				86D6CCD8275AA6FAA55DDE4C /* [CP] Embed Pods Frameworks */,
+				EC5E39B10F2756337347D8F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,6 +402,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EC5E39B10F2756337347D8F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iChat/Pods-iChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iChat/Pods-iChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iChat/Pods-iChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,6 +453,7 @@
 				523F7F9B2642973C0083FDAC /* AppDelegate.swift in Sources */,
 				52E4E7EA2645B9CE00914222 /* AddPhotoView.swift in Sources */,
 				52C63FD72652510B00454BA2 /* UIView + Extension.swift in Sources */,
+				52690ACD2658F70B00E762F3 /* UIaplication + Extension.swift in Sources */,
 				523F7FBE26441DBC0083FDAC /* UIImageView + Extension.swift in Sources */,
 				523F7FCF26450C820083FDAC /* SignUpViewController.swift in Sources */,
 				52C63FC8264F96F600454BA2 /* UserCell.swift in Sources */,

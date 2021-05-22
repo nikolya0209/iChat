@@ -29,6 +29,13 @@ class SetupProfileViewController: UIViewController {
     init(currentUser: User) {
         self.currentUser = currentUser
         super.init(nibName: nil, bundle: nil)
+        
+        //google auth
+        if let username = currentUser.displayName {
+            fullNameTextField.text = username
+            
+            //TODO set google image
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -41,6 +48,7 @@ class SetupProfileViewController: UIViewController {
         view.backgroundColor = .white
         setupConstrints()
         goToChatsButton.addTarget(self, action: #selector(goToChatsButtonTapped), for: .touchUpInside)
+        
     }
     
     @objc private func goToChatsButtonTapped() {

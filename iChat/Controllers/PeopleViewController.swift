@@ -7,9 +7,10 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class PeopleViewController: UIViewController {
-    
+  
     //let users = Bundle.main.decode([MUser].self, from: "users.json")
     let users = [MUser]()
     var collectionView:  UICollectionView!
@@ -40,6 +41,8 @@ class PeopleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         view.backgroundColor = .orange
         setupSearchBar()
