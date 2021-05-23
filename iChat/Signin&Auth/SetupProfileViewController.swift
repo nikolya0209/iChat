@@ -12,7 +12,7 @@ class SetupProfileViewController: UIViewController {
     
     let welcomeLabel = UILabel(text: "Set up profile!", font: .avenir26())
     
-    let fullnameLabel = UILabel(text: "Login with")
+    let fullnameLabel = UILabel(text: "Full name")
     let aboutMeLabel = UILabel(text: "About me")
     let sexLabel = UILabel(text: "Sex")
     
@@ -48,6 +48,15 @@ class SetupProfileViewController: UIViewController {
         view.backgroundColor = .white
         setupConstrints()
         goToChatsButton.addTarget(self, action: #selector(goToChatsButtonTapped), for: .touchUpInside)
+        fullImageView.plusButton.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
+        
+    }
+    @objc private func plusButtonTapped() {
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true, completion: nil)
         
     }
     
@@ -55,7 +64,7 @@ class SetupProfileViewController: UIViewController {
         FirestoreService.shared.saveProfileWith(id: currentUser.uid,
                                                 email: currentUser.email!,
                                                 username: fullNameTextField.text,
-                                                avatarStringURL: "nil",
+                                                avatarImage: fullImageView.circleImageView.image,
                                                 description: aboutMeTextField.text,
                                                 sex: sexSegmentedControl.titleForSegment(at: sexSegmentedControl.selectedSegmentIndex))
                                                  { (result) in
@@ -113,6 +122,16 @@ extension SetupProfileViewController {
         ])
         
     }
+}
+
+//MARK: - UIImagePickerControllerDelegate
+extension SetupProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+        fullImageView.circleImageView.image = image
+    }
+    
 }
 
 
