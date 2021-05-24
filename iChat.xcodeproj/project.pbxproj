@@ -13,6 +13,7 @@
 		52014BEA264E71F2008D6161 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52014BE9264E71F2008D6161 /* SectionHeader.swift */; };
 		52110C75265AC3B3009106A7 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52110C74265AC3B3009106A7 /* StorageService.swift */; };
 		52110C78265AC73D009106A7 /* UIImage + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52110C77265AC73D009106A7 /* UIImage + Extention.swift */; };
+		52110C98265B6EEB009106A7 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52110C97265B6EEB009106A7 /* ListenerService.swift */; };
 		5224FD93264EB84100F211D2 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 5224FD92264EB84100F211D2 /* users.json */; };
 		5229C77026470B4A0075FF2A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C76F26470B4A0075FF2A /* MainTabBarController.swift */; };
 		5229C77326470BEB0075FF2A /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229C77226470BEB0075FF2A /* PeopleViewController.swift */; };
@@ -65,6 +66,7 @@
 		52014BE9264E71F2008D6161 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		52110C74265AC3B3009106A7 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		52110C77265AC73D009106A7 /* UIImage + Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extention.swift"; sourceTree = "<group>"; };
+		52110C97265B6EEB009106A7 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
 		5224FD92264EB84100F211D2 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = "../../../../Уроки Ichat/20. урок/IChat/users.json"; sourceTree = "<group>"; };
 		5229C76F26470B4A0075FF2A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5229C77226470BEB0075FF2A /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				5249574826555508006B7485 /* AuthService.swift */,
 				52110C74265AC3B3009106A7 /* StorageService.swift */,
 				528438492656CCBF009A3E5C /* FirestoreService.swift */,
+				52110C97265B6EEB009106A7 /* ListenerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				52014BE4264E6570008D6161 /* SelfconfiguringCell.swift in Sources */,
 				52EEA91D265299C300951F56 /* ChatRequestViewController.swift in Sources */,
 				52CB5E26264C103200FF2A98 /* Bundle-Decodable.swift in Sources */,
+				52110C98265B6EEB009106A7 /* ListenerService.swift in Sources */,
 				523F7FBB26441BB10083FDAC /* Label + Extension.swift in Sources */,
 				523F7FC52644326B0083FDAC /* ButtonFormView.swift in Sources */,
 				528438622656D334009A3E5C /* UserError.swift in Sources */,
