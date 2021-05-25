@@ -38,6 +38,7 @@
 		5254D42A2646D76900AA4FB8 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */; };
 		5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D42E2647005B00AA4FB8 /* ListViewController.swift */; };
 		52690ACD2658F70B00E762F3 /* UIaplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52690ACC2658F70B00E762F3 /* UIaplication + Extension.swift */; };
+		526A861A265D85D200E4F02B /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A8619265D85D100E4F02B /* MMessage.swift */; };
 		528438472656356F009A3E5C /* AuthNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438462656356F009A3E5C /* AuthNavigationDelegate.swift */; };
 		5284384A2656CCBF009A3E5C /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438492656CCBF009A3E5C /* FirestoreService.swift */; };
 		528438622656D334009A3E5C /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528438612656D334009A3E5C /* UserError.swift */; };
@@ -93,6 +94,7 @@
 		5254D4292646D76900AA4FB8 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		5254D42E2647005B00AA4FB8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		52690ACC2658F70B00E762F3 /* UIaplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIaplication + Extension.swift"; sourceTree = "<group>"; };
+		526A8619265D85D100E4F02B /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		528438462656356F009A3E5C /* AuthNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationDelegate.swift; sourceTree = "<group>"; };
 		528438492656CCBF009A3E5C /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		528438612656D334009A3E5C /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				52C63FBF264EB9FF00454BA2 /* MUser.swift */,
 				52C63FC2264EBA0800454BA2 /* MChat.swift */,
+				526A8619265D85D100E4F02B /* MMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				523F7FB8264417850083FDAC /* UIColor + Extension.swift in Sources */,
 				523F7F9D2642973C0083FDAC /* SceneDelegate.swift in Sources */,
 				523F7FB226440EA40083FDAC /* UIButton + Extension.swift in Sources */,
+				526A861A265D85D200E4F02B /* MMessage.swift in Sources */,
 				52110C78265AC73D009106A7 /* UIImage + Extention.swift in Sources */,
 				5249574926555508006B7485 /* AuthService.swift in Sources */,
 				52EBA9CC26453E3D00149E91 /* LoginViewController.swift in Sources */,
