@@ -57,6 +57,7 @@
 		52EBA9CC26453E3D00149E91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBA9CB26453E3D00149E91 /* LoginViewController.swift */; };
 		52EBA9CF2645823900149E91 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBA9CE2645823900149E91 /* SetupProfileViewController.swift */; };
 		52EEA91D265299C300951F56 /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EEA91C265299C300951F56 /* ChatRequestViewController.swift */; };
+		52F1F1F5265E2C120039E68C /* WaitingChatNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1F1F4265E2C120039E68C /* WaitingChatNavigation.swift */; };
 		B1301AF476666F327412A7FF /* Pods_iChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F596D135930370BA58A3BBD5 /* Pods_iChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		52EBA9CB26453E3D00149E91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		52EBA9CE2645823900149E91 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		52EEA91C265299C300951F56 /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
+		52F1F1F4265E2C120039E68C /* WaitingChatNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatNavigation.swift; sourceTree = "<group>"; };
 		6F6E72E800FF41739575603C /* Pods-iChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChat.debug.xcconfig"; path = "Target Support Files/Pods-iChat/Pods-iChat.debug.xcconfig"; sourceTree = "<group>"; };
 		7F9527C4A0C22F256B0F4C32 /* Pods-iChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChat.release.xcconfig"; path = "Target Support Files/Pods-iChat/Pods-iChat.release.xcconfig"; sourceTree = "<group>"; };
 		F596D135930370BA58A3BBD5 /* Pods_iChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 			children = (
 				52014BE3264E6570008D6161 /* SelfconfiguringCell.swift */,
 				528438462656356F009A3E5C /* AuthNavigationDelegate.swift */,
+				52F1F1F4265E2C120039E68C /* WaitingChatNavigation.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C63FC3264EBA0800454BA2 /* MChat.swift in Sources */,
+				52F1F1F5265E2C120039E68C /* WaitingChatNavigation.swift in Sources */,
 				5254D42F2647005B00AA4FB8 /* ListViewController.swift in Sources */,
 				52EBA9CF2645823900149E91 /* SetupProfileViewController.swift in Sources */,
 				52014BEA264E71F2008D6161 /* SectionHeader.swift in Sources */,
